@@ -3,7 +3,7 @@ import { Icon } from 'Icons'
 
 export default function Header() {
   return (
-    <div className='text-black bg-[#dedede] sticky top-0 z-10'>
+    <div className='text-black sticky top-0 z-10'>
         <div className='flex justify-between items-center px-[75px]'>
         <span className='text-black'><Icon name="logo" size={100}/></span>
         <nav>

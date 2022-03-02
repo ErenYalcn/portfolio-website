@@ -24,15 +24,6 @@
 ::after {
   --tw-content: '';
 }
-.ccircle {
-  position: absolute;
-  left:-20%;
-  bottom:-10%;
-  stroke-miterlimit: 10;
-  
-}
-
-
 
 /*
 1. Use a consistent sensible line-height in all browsers.
@@ -433,7 +424,59 @@ Ensure the default browser behavior of the `hidden` attribute.
 html, body{
   font-family:'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ccircle {
+  position: absolute;
+  left:-20%;
+  bottom:-10%;
+  stroke-miterlimit: 10;
+}
+
+.line {
+  width: 30px;
+  height: 2.5px;
+  position: relative;
+  background: #000;
+  margin-left: 15px;
+  transition: all .5s cubic-bezier(.77,0,.175,1);
+}
+
+.line:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  width: 8px;
+  height: 1px;
+  -webkit-transform-origin: center right;
+          transform-origin: center right;
+}
+
+.line:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  width: 8px;
+  height: 1px;
+  -webkit-transform-origin: center right;
+          transform-origin: center right;
+}
+
+#header__cross {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  -webkit-transform: scale(.8) translateY(10px);
+          transform: scale(.8) translateY(10px);
+  z-index: 0;
+  position: absolute;
 }
 
 *, ::before, ::after {
@@ -490,6 +533,10 @@ html, body{
   position: sticky;
 }
 
+.\!bottom-0 {
+  bottom: 0px !important;
+}
+
 .top-0 {
   top: 0px;
 }
@@ -520,13 +567,42 @@ html, body{
   margin-top: 5rem;
 }
 
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
 .flex {
   display: flex;
+}
+
+.h-auto {
+  height: auto;
+}
+
+.w-\[500px\] {
+  width: 500px;
 }
 
 .max-w-max {
   max-width: -webkit-max-content;
   max-width: max-content;
+}
+
+@-webkit-keyframes pulse {
+  50% {
+    opacity: .5;
+  }
+}
+
+@keyframes pulse {
+  50% {
+    opacity: .5;
+  }
+}
+
+.animate-pulse {
+  -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+          animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 .flex-col {
@@ -551,6 +627,10 @@ html, body{
           column-gap: 1rem;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .rounded-2xl {
   border-radius: 1rem;
 }
@@ -573,11 +653,6 @@ html, body{
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#dedede\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(222 222 222 / var(--tw-bg-opacity));
-}
-
 .p-12 {
   padding: 3rem;
 }
@@ -590,6 +665,18 @@ html, body{
   padding: 6px;
 }
 
+.p-16 {
+  padding: 4rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.p-1 {
+  padding: 0.25rem;
+}
+
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -598,6 +685,16 @@ html, body{
 .px-\[75px\] {
   padding-left: 75px;
   padding-right: 75px;
+}
+
+.px-32 {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .text-6xl {
@@ -617,6 +714,21 @@ html, body{
 
 .text-\[19px\] {
   font-size: 19px;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .font-bold {
@@ -662,6 +774,13 @@ html, body{
 .hover\:scale-105:hover {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
+  -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+          transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:scale-95:hover {
+  --tw-scale-x: .95;
+  --tw-scale-y: .95;
   -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
           transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }

@@ -9,9 +9,60 @@
 @layer base{
     html, body{
         font-family:'Roboto', sans-serif;
-        @apply antialiased,
+        @apply antialiased;
         
 
     }
+    
+    .ccircle {
+        position: absolute;
+        left:-20%;
+        bottom:-10%;
+        stroke-miterlimit: 10;
+        
+      }
+      .line {
+        width: 30px;
+        height: 2.5px;
+        position: relative;
+        background: #000;
+        margin-left: 15px;
+        -webkit-transition: all .5s cubic-bezier(.77,0,.175,1);
+        -moz-transition: all .5s cubic-bezier(.77,0,.175,1);
+        -o-transition: all .5s cubic-bezier(.77,0,.175,1);
+        -ms-transition: all .5s cubic-bezier(.77,0,.175,1);
+        transition: all .5s cubic-bezier(.77,0,.175,1);
+    }
+    .line:before {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background: #000;
+        width: 8px;
+        height: 1px;
+        transform-origin: center right;
+    }
+    .line:after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background: #000;
+        width: 8px;
+        height: 1px;
+        transform-origin: center right;
+    }
 
+        #header__cross {
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            transform: scale(.8) translateY(10px);
+            z-index: 0;
+            position: absolute;
+        }
+   
 }

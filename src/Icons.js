@@ -14,8 +14,15 @@ const LogoIcon = ({ size }) => {
 const CircleIcon = ({ size }) => {
     return(
 
-<svg id="ccircle" class="ccircle" height={size} width={size} viewBox="0 0 187 187"><circle cx="93.5" cy="93.5" r="93" fill="none" stroke="#8f8e8e" strokeWidth="0.5px"></circle></svg>
+<svg class="ccircle" height={size} width={size} viewBox="0 0 187 187"><circle cx="93.5" cy="93.5" r="93" fill="none" stroke="#8f8e8e" strokeWidth="0.5px"></circle></svg>
         )
+}
+const CrossIcon = ({ size }) => {
+    return(
+
+<svg strokeWidth={7} stroke="black" id="header__cross" viewBox="0 0 123.49 127.88"><line x1="118.08" y1="5.19" x2="5.41" y2="122.69" ></line><line x1="5.41" y1="5.19" x2="118.08" y2="122.69" ></line>
+</svg>
+)
 }
 
 
@@ -24,6 +31,7 @@ const Icon = ({name, size = 24}) => {
     const icons = {
         logo: LogoIcon,
         circle: CircleIcon,
+        cross: CrossIcon
 
 
     }
