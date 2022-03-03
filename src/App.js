@@ -6,11 +6,11 @@ import { Icon } from 'Icons'
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-cwhite">
       <Header />
       <Content />
       <Footer />
-      <div className="overflow-hidden relative">
+      <div className="relative">
       <Icon name="circle" size={400}/>
       </div>
       

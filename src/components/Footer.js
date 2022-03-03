@@ -13,8 +13,7 @@ export default function Footer() {
             <button className='text-2xl font-semibold border-[1px] border-nonact rounded-2xl p-3 px-6 my-1 hover:bg-cgray hover:border-cgray hover:scale-105 transition-all'>Bana ulaşabilirsiniz 👋🏻</button>
         </div>
         
-
-        <div className='flex items-center gap-x-3 mt-20'>
+        <div className='flex items-center gap-x-3 mt-20 '>
             <span className='text-cwhite tracking-wider'>© 2022  Eren Yalçın</span>
 
             <div className='flex items-center gap-x-3'>
