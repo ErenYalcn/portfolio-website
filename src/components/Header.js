@@ -12,7 +12,7 @@ export default function Header() {
                     Hakkımda
                 </li>
                 <li className='hover:text-black transition-all'>
-                    İşlerim
+                    Projelerim
                 </li>
                 <li className='hover:text-black transition-all'>
                     İletişim
@@ -20,6 +20,7 @@ export default function Header() {
             </ul>
         </nav>
         </div>
+        
     </div>
   )
 }

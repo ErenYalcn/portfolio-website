@@ -1,5 +1,6 @@
 import { Icon } from 'Icons'
 import React from 'react'
+import cesar from '../../Image/cesar.png'
 
 export default function HeroSection() {
   return (
@@ -28,7 +29,7 @@ export default function HeroSection() {
 
         <div className='relative'>
           <Icon name="cross" />
-          <img className='w-[500px] h-auto animate-pulse' src="https://portfolio-behance-final.vercel.app/images/ceasar-bust.c2bf68cb3b24b5361c95d04c445511a8.png" />
+          <img className='w-[500px] h-auto animate-pulse' src={cesar} />
         </div>
       </div>
     </div>

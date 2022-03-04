@@ -11,7 +11,8 @@ function App() {
       <Content />
       <Footer />
       <div className="relative">
-      <Icon name="circle" size={400}/>
+      <Icon name="dot" size={180}/>
+      <Icon name="circletwo" size={300}/>
       </div>
       
     </div>
