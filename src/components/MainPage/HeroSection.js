@@ -7,14 +7,16 @@ import Typical from 'react-typical'
 export default function HeroSection() {
   return (
     <div className='bg-cwhite top-0'>
-      <div className='flex justify-between p-2 px-32 2xl:px-64 text-black items-center'>
-        <div className='z-20'>
-          <h2 className='text-5xl font-bold'><span className='text-6xl'>Eren Yalçın</span> <br /> 
-          <Typical
+      <div className='grid sm:flex justify-between p-2  px-8 sm:px-32 2xl:px-64 text-black items-center'>
+        <div className='z-20 order-2 md:order-1'>
+          <h2 className='text-xl sm:text-5xl font-bold'><span className='text-6xl'>Eren Yalçın</span> <br /> 
+            <div className='min-h-[40px]'>
+            <Typical
             steps={['Front-End Developer', 1000, 'UI | UX Designer', 500,'Creative Ideas', 500]}
             loop={Infinity}
             wrapper="p"
           />
+            </div>
           </h2>
           <p className='text-sm mt-6'>Merhaba ben Eren, güncel teknolojiler ile web geliştiriciliği yapıyorum,<br /> arayüzler tasarlamak ve herkesten farklı işler yapmak benim mottom.</p>
           <a href="#" className='text-xl font-semibold rounded-2xl py-4 transition-all flex items-center hover:scale-95'>Projelerimi inceleyebilirsiniz <span class="line"></span>&gt;</a>
@@ -32,10 +34,10 @@ export default function HeroSection() {
             </a>
           </nav>
         </div>
-        <div className='w-[450px] h-[450px] rounded-full absolute bg-white left-0 right-0 m-auto my-auto bg-opacity-60'></div>
+        <div className='hidden sm:block w-[450px] h-[450px] rounded-full absolute bg-white left-0 right-0 m-auto my-auto bg-opacity-60'></div>
        
 
-        <div className='relative'>
+        <div className='relative order-1 md:order-2'>
           <Icon name="cross" />
           <img className='w-[500px] h-auto animate-pulse' src={cesar} />
         </div>

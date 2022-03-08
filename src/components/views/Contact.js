@@ -7,7 +7,7 @@ export default function Contact() {
 
 
     <div className='relative w-full h-full'>
-      <video loop autoPlay muted src={particles} className='absolute z-10 w-full min-h-cover object-cover' />
+      <video loop autoPlay muted src={particles} className='absolute z-10 w-full h-full object-cover min-w-max' />
 
           <div class="z-30 relative max-w-screen-xl px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto text-gray-900 bg">
             <div class="flex flex-col">
@@ -19,7 +19,7 @@ export default function Contact() {
                 </div>         
               </div>
               <div class="mt-20 -ml-16">
-                <div className='flex items-center justify-between px-16'>
+                <div className=' sm:flex items-center justify-between px-16'>
                     <div className='text-cwhite flex flex-col'>
                       <h5>Social.</h5>
                       <div className='flex items-center gap-x-3 mt-4'>

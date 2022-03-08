@@ -92,7 +92,7 @@
         }
         .dott{
             position: absolute;
-            left:60%;
+            left:50%;
             bottom:26rem;
             stroke-miterlimit: 10;
             z-index: 0;
@@ -106,6 +106,17 @@
                 z-index: 10;
                 opacity: 30%;
         }
+        .stop-scrolling{
+            height:100%;
+            overflow:hidden;
+        }
+        .start-scrolling {
+
+            height: 100%;
+            
+            overflow: none;
+            
+            }
 
    
 }

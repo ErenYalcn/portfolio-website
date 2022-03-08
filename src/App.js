@@ -2,12 +2,11 @@ import Content from "components/Content";
 import Header from "components/Header";
 import Footer from "components/Footer"
 import { Icon } from 'Icons'
-
 import { BrowserRouter as Router, Switch } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App bg-cwhite">
+    <div className="App bg-cwhite overflow-hidden relative">
     <Router>
       <Switch>
         <Header />

@@ -24,7 +24,7 @@ export default function Footer() {
 
 
         <div className='flex items-center gap-x-3 mt-20 '>
-            <span className='text-cwhite tracking-widest'>© 2022  Eren Yalçın</span>
+            <span className='text-cwhite tracking-widest whitespace-nowrap'>© 2022  Eren Yalçın</span>
 
             <div className='flex items-center gap-x-3'>
                 <div className='text-xl hover:bg-cwhite hover:text-black max-w-max p-[6px] rounded-full transition-all'>
