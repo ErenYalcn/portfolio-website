@@ -9,6 +9,8 @@ module.exports = {
         nonact: '#8f8e8e',
         cwhite: '#f8f8f8',
         cgray: '#303030',
+        inputg:'#242424',
+        inputgg:'#131313'
         
       }
 
