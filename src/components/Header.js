@@ -8,6 +8,7 @@ import{AiFillGithub, AiFillLinkedin, AiOutlineInstagram} from 'react-icons/ai'
 
 
 export default function Header() {
+    
     const [isOpen, setOpen] = useState(false)
     
     let menu
@@ -39,27 +40,27 @@ export default function Header() {
                     </li>
                 </ul>
             </nav>
-            <div className='bottom-0 absolute left-[50%] -ml-[81.5px] mb-8'>
+            <div className='bottom-0 absolute left-[50%] -ml-[90px] mb-8'>
             <div className='flex items-center gap-x-3'>
-                <div className='text-xl hover:bg-cwhite hover:text-black max-w-max p-[6px] rounded-full transition-all'>
+                <div className='text-2xl hover:bg-cwhite hover:text-black max-w-max p-[6px] rounded-full transition-all'>
                    <a href="https://erenyalcn.dev/">
                    <BiWorld />
                    </a>
                 </div>
 
-                <div  className='text-[19px] hover:bg-cwhite hover:text-black max-w-max p-[6px] rounded-full transition-all'>
+                <div  className='text-2xl hover:bg-cwhite hover:text-black max-w-max p-[6px] rounded-full transition-all'>
                     <a href="https://github.com/ErenYalcn">
                     <AiFillGithub />
                     </a>
                 </div>
 
-                <div  className='text-xl hover:bg-cwhite hover:text-black max-w-max p-[6px] rounded-full transition-all'>
+                <div  className='text-2xl hover:bg-cwhite hover:text-black max-w-max p-[6px] rounded-full transition-all'>
                     <a href="https://www.linkedin.com/in/erenyalcn/">
                     <AiFillLinkedin />
                     </a>
                 </div>
                 
-                <div  className='text-xl hover:bg-cwhite hover:text-black max-w-max p-[6px] rounded-full transition-all'>
+                <div  className='text-2xl hover:bg-cwhite hover:text-black max-w-max p-[6px] rounded-full transition-all'>
                     <a href="https://www.instagram.com/erenyalccn">
                     <AiOutlineInstagram />
                     </a>
@@ -97,12 +98,14 @@ export default function Header() {
 
 
 
-
   return (
+      
     <div className='text-black sticky top-0 z-50'>
+
+
         {menu}
         <div className='flex justify-between items-center px-8 sm:px-[75px] bg-transparent'>
-        <a href="http://localhost:3000" className='text-black z-50'><Icon name="logo" size={100}/></a>
+        <a href="https://erenyalcn.dev" className='text-black z-50'><Icon name="logo" size={100}/></a>
         <div className='block sm:hidden z-50'>
             
             

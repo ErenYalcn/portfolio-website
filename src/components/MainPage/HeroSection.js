@@ -21,15 +21,15 @@ export default function HeroSection() {
           <p className='text-sm mt-6'>Merhaba ben Eren, güncel teknolojiler ile web geliştiriciliği yapıyorum,<br /> arayüzler tasarlamak ve herkesten farklı işler yapmak benim mottom.</p>
           <a href="#" className='text-xl font-semibold rounded-2xl py-4 transition-all flex items-center hover:scale-95'>Projelerimi inceleyebilirsiniz <span class="line"></span>&gt;</a>
           <nav className='flex gap-x-4 mt-5 text-md'>
-            <a href="#" className='hover:line-through hover:scale-105 transition-all'>
+            <a href="https://www.linkedin.com/in/erenyalcn/" className='hover:line-through hover:scale-105 transition-all'>
             Linkedin
             </a>
             <span>/</span>
-            <a href="#" className='hover:line-through hover:scale-105 transition-all'>
+            <a href="https://github.com/ErenYalcn" className='hover:line-through hover:scale-105 transition-all'>
             Github
             </a>
             <span>/</span>
-            <a href="#" className='hover:line-through hover:scale-105 transition-all'>
+            <a href="https://ticaretdio.com" className='hover:line-through hover:scale-105 transition-all'>
             Ticaretdio
             </a>
           </nav>

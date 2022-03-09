@@ -1,8 +1,40 @@
 import React from 'react'
+import {useEffect, useState} from "react";
+import request from 'graphql-request';
 
-export default function ProjectItem() {
+export default function ProjectItem({}) {
+  const [projects, setProjects] = useState(null);
+
+  useEffect(() => {
+    const getStaticProps = async () => {
+     const {projects} = await request(
+       'https://api-eu-central-1.graphcms.com/v2/cl05l1ghu1xwu01z22ef2azh6/master'
+       `
+     {
+        projects {
+          id
+          title
+          description
+          image {
+            url
+          }
+          source
+          tags
+        }
+      }
+    `);
+
+
+    setProjects(projects);
+    };
+   
+      
+    getStaticProps();
+  }, []);
+  console.log(projects);
   return (
-    <div>
+    <a href="https://github.com/ErenYalcn/spotify-react-clone">
+          <div>
         <div className='flex justify-between items-center group border-t py-2 px-8 sm:px-0'>
         <div className='flex items-center h-52'>
          <div className='hidden sm:block'> <div class="line2"></div></div>
@@ -18,5 +50,9 @@ export default function ProjectItem() {
         </div>
         </div>
     </div>
+    </a>
   )
 }
+
+
+

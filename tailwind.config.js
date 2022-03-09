@@ -1,5 +1,6 @@
 module.exports = {
   mode:'jit',
+  env:{NEXT_PUCBLIC_GRAPHCMS_URL:process.env.NEXT_PUCBLIC_GRAPHCMS_URL},
   purge: ["./src/**/*.{html,js}"],
   content: [],
   theme: {

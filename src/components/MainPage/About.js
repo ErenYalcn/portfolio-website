@@ -13,7 +13,7 @@ export default function About() {
             <h3 className='text-4xl sm:text-8xl font-bold absolute opacity-20'>Hakkımda</h3>
             <p className='text-md mt-10 tracking-wider'>Web Front-End Developer</p>
             <h3 className='text-4xl font-bold '>merhaba, ben Eren Yalçın</h3>
-            <p className='max-w-[460px]'>Web alanında hem Front-End geliştiriciliği yapmaktayım. Web alanı için HTML, CSS, JS ve React üzerine çalışmalar yapıp yenilikleri yakalamaya, kendimi yeniliklere adapte etmeye ve gelişime ayak uydurmaya çalışıyorum. Bir yandan e-ticaret siteleri hazırlayıp müşterilerime satışlarını yapmaktayım. Front-End için kullanacağım görsel ve videoları oluşturmak için ileri düzeyde Adobe Photoshop, Illustrator biliyorum. Öte yandan After Effect ve Premiere yazılımlarında da kendimi sürekli geliştirmeye çalışıyorum. Özgün olmak, herkesten farklı işler yapmak, kısacası tarz sahibi işler yapmaya çalışıyorum. Sektör olarakta ilgimi en çok çeken E-Ticaret olmuştur.<br />Her şey bir kahve ile başlar ☕</p>
+            <p className='max-w-[460px]'>Web alanında hem Front-End geliştiriciliği yapmaktayım. Web alanı için HTML, CSS, JS ve React üzerine çalışmalar yapıp yenilikleri yakalamaya, kendimi yeniliklere adapte etmeye ve gelişime ayak uydurmaya çalışıyorum. Bir yandan e-ticaret siteleri hazırlayıp müşterilerime satışlarını yapmaktayım. Front-End için kullanacağım görsel ve videoları oluşturmak için ileri düzeyde Adobe Photoshop, Illustrator biliyorum.</p>
           </div>
         </div>
       </div>
