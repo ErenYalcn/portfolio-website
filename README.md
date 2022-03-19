@@ -8,7 +8,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://getir.com">
+  <a href="https://erenyalcn.dev/">
     <img src="https://user-images.githubusercontent.com/57539683/157323822-0bd9e4c4-dece-481a-84cd-cae1319df712.svg" width="380" height="290">
   </a>
 
@@ -16,7 +16,7 @@
 
   <p align="center">
     I completed this project to improve my skills! <br />
-    <a href="https://twitter-clone-byerenyalcn.netlify.app/">Demo Site</a>
+    <a href="https://erenyalcn.dev/">Demo Site</a>
     <br />
   </p>
 </div>
