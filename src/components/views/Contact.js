@@ -14,34 +14,34 @@ export default function Contact() {
               <div className='mt-16'>
                 <h2 class="text-4xl lg:text-5xl font-bold leading-tight text-cwhite stroke-2 stroke-white">İrtibata geçelim!</h2>
                 <div class="text-cwhite mt-8">
-                  Formları sevmiyor musunuz? <span class="underline">eposta</span> gönderin.
+                  Formları sevmiyor musunuz? <a href="mailto:erenyalcn09@gmail.com" class="underline">eposta</a> gönderin.
                   <h2 class="text-2xl mt-2 font-bold leading-tight text-cwhite stroke-2 stroke-white">Farklı, yaratıcı işler ortaya çıkarmak istiyorsanız.</h2>
                 </div>         
               </div>
               <div class="mt-20 -ml-16">
                 <div className=' sm:flex items-center justify-between px-16'>
                     <div className='text-cwhite flex flex-col'>
-                      <h5>Social.</h5>
+                      <h5>Sosyal Medya.</h5>
                       <div className='flex items-center gap-x-3 mt-4'>
-                <div className='text-xl hover:bg-cwhite text-cgray hover:text-black max-w-max p-[6px] rounded-full transition-all'>
+                <div className='text-xl hover:bg-cwhite text-cwhite hover:text-black max-w-max p-[6px] rounded-full transition-all'>
                    <a href="https://erenyalcn.dev/">
                    <BiWorld />
                    </a>
                 </div>
 
-                <div  className='text-[19px] hover:bg-cwhite text-cgray hover:text-black max-w-max p-[6px] rounded-full transition-all'>
+                <div  className='text-[19px] hover:bg-cwhite text-cwhite hover:text-black max-w-max p-[6px] rounded-full transition-all'>
                     <a href="https://github.com/ErenYalcn">
                     <AiFillGithub />
                     </a>
                 </div>
 
-                <div  className='text-xl hover:bg-cwhite text-cgray hover:text-black max-w-max p-[6px] rounded-full transition-all'>
+                <div  className='text-xl hover:bg-cwhite text-cwhite hover:text-black max-w-max p-[6px] rounded-full transition-all'>
                     <a href="https://www.linkedin.com/in/erenyalcn/">
                     <AiFillLinkedin />
                     </a>
                 </div>
                 
-                <div  className='text-xl hover:bg-cwhite text-cgray hover:text-black max-w-max p-[6px] rounded-full transition-all'>
+                <div  className='text-xl hover:bg-cwhite text-cwhite hover:text-black max-w-max p-[6px] rounded-full transition-all'>
                     <a href="https://www.instagram.com/erenyalccn">
                     <AiOutlineInstagram />
                     </a>
@@ -51,8 +51,8 @@ export default function Contact() {
             </div>
                     </div>
                     <div className='text-cwhite flex flex-col'>
-                    <h5>Phone.</h5>
-                    <p className='mt-4 text-cgray'>+90 541 969 1945</p>
+                    <h5>Telefon.</h5>
+                    <a href="tel://+905419691945" className='mt-4 text-cwhite'>+90 541 969 1945</a>
                   </div>
                   </div>
 

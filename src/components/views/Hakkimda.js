@@ -13,12 +13,12 @@ export default function Hakkimda() {
           <h3 className='text-2xl tracking-widest font-thin max-w-[500px]'>Web Front-End geliştiriciliği yapmaktayım. HTML, CSS, JS ve React üzerine çalışmalar yapıp yenilikleri yakalamaya, kendimi yeniliklere adapte etmeye ve gelişime ayak uydurmaya çalışıyorum.</h3>
         </div>
         <div className='flex order-1'>
-          <img className='w-96 h-96' src={transparent} />
+          <img className='sm:w-96 sm:h-96 w-80 h-80' src={transparent} />
         </div>
 
       </div>
       <div className='max-w-[1050px] flex items-center mx-auto'>
-        <p className='tracking-wide	font-thin leading-8 px-8'>Web alanında hem Front-End geliştiriciliği yapmaktayım. Web alanı için HTML, CSS, JS ve React üzerine çalışmalar yapıp yenilikleri yakalamaya, kendimi yeniliklere adapte etmeye ve gelişime ayak uydurmaya çalışıyorum. Bir yandan e-ticaret siteleri hazırlayıp müşterilerime satışlarını yapmaktayım. Front-End için kullanacağım görsel ve videoları oluşturmak için ileri düzeyde Adobe Photoshop, Illustrator biliyorum. Öte yandan After Effect ve Premiere yazılımlarında da kendimi sürekli geliştirmeye çalışıyorum. Özgün olmak, herkesten farklı işler yapmak, kısacası tarz sahibi işler yapmaya çalışıyorum. Sektör olarakta ilgimi en çok çeken E-Ticaret olmuştur. Her şey bir kahve ile başlar</p>
+        <p className='tracking-wide	font-thin leading-8 px-8'>Web alanında Front-End geliştiriciliği yapmaktayım. HTML, CSS, JS ve React üzerine çalışmalar yapıp yenilikleri yakalamaya, kendimi yeniliklere adapte etmeye ve gelişime ayak uydurmaya çalışıyorum. Bir yandan e-ticaret siteleri hazırlayıp müşterilerime satışlarını yapmaktayım. Front-End için kullanacağım görsel ve videoları oluşturmak için ileri düzeyde Adobe Photoshop, Illustrator biliyorum. Öte yandan After Effect ve Premiere yazılımlarında da kendimi sürekli geliştirmeye çalışıyorum. Özgün olmak, herkesten farklı işler yapmak, kısacası tarz sahibi işler yapmaya çalışıyorum. Sektör olarakta ilgimi en çok çeken E-Ticaret olmuştur. Her şey bir kahve ile başlar</p>
       </div>
 
       

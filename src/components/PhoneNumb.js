@@ -19,7 +19,7 @@ export default function PhoneNumb() {
     }
   return (
     <div className="w-full md:w-[400px] md:rounded-lg p-6 sm:bg-black md:mx-auto z-20">
-    <h4 className="text-primary-brand-color font-semibold text-center mb-2"> ya da ben size ulaşayım</h4>
+    <h4 className="text-primary-brand-color font-semibold text-center mb-2"> ya da ben size ulaşabilirim</h4>
     <div className="flex gap-x-2">
     <ReactFlagsSelect 
      countries={Object.keys(phonenumber)}

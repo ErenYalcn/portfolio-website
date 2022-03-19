@@ -1,24 +1,23 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Icon } from 'Icons'
 import { NavLink } from 'react-router-dom'
-import { Fade as Hamburger } from 'hamburger-react'
-import {useState} from 'react'
+import { Cross as Hamburger } from 'hamburger-react'
 import {BiWorld} from 'react-icons/bi'
 import{AiFillGithub, AiFillLinkedin, AiOutlineInstagram} from 'react-icons/ai'
 
-
-export default function Header() {
-    
+export default function Header({isDarkMode}) {
     const [isOpen, setOpen] = useState(false)
+        console.log(isDarkMode)    
     
+
     let menu
     if(isOpen){
         
         menu =     
-        <div className='bg-cwhite min-w-full min-h-full fixed z-50 overflow-y-hidden'>
-            <nav className='mt-[18rem]'>
-                <ul className='flex flex-col gap-x-4 font-semibold text-black text-4xl gap-y-10 items-center'>
-                    <li className='hover:text-black transition-all'>
+        <div className='bg-cwhite w-full h-full fixed z-50 overflow-y-hidden'>
+            <nav className='mt-[10rem]'>
+                <ul className='flex flex-col gap-x-4 font-bold text-black text-4xl gap-y-7 items-center'>
+                    <li className='hover:text-black transition-all '>
                         <NavLink to={"/"} exact activeClassName="line-through transition-all" >
                         Anasayfa
                         </NavLink>
@@ -96,20 +95,21 @@ export default function Header() {
 
 
 
-
-
   return (
       
+      
     <div className='text-black sticky top-0 z-50'>
-
+        <div>
+  
+        </div>
 
         {menu}
         <div className='flex justify-between items-center px-8 sm:px-[75px] bg-transparent'>
-        <a href="https://erenyalcn.dev" className='text-black z-50'><Icon name="logo" size={100}/></a>
+        <a href="https://erenyalcn.dev" className='text-black z-50'>{!isDarkMode  ? <Icon name="logo" size={100}  /> : <Icon name="logow" size={100} />}</a>
         <div className='block sm:hidden z-50'>
             
             
-        <Hamburger onToggle={toggled => {
+        <Hamburger color={!isDarkMode ? "black" : "white"} onToggle={toggled => {
             if (toggled) {
                 // open a menu 
                 console.log('açıldı')

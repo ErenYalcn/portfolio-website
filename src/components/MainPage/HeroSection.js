@@ -6,8 +6,8 @@ import Typical from 'react-typical'
 
 export default function HeroSection() {
   return (
-    <div className='bg-cwhite top-0'>
-      <div className='grid sm:flex justify-between p-2  px-8 sm:px-32 2xl:px-64 text-black items-center'>
+    <div className=' top-0'>
+      <div className='grid sm:flex justify-between p-2  px-8 sm:px-32 2xl:px-64  items-center'>
         <div className='z-20 order-2 md:order-1'>
           <h2 className='text-xl sm:text-5xl font-bold'><span className='text-6xl'>Eren Yalçın</span> <br /> 
             <div className='min-h-[40px]'>
@@ -19,7 +19,7 @@ export default function HeroSection() {
             </div>
           </h2>
           <p className='text-sm mt-6'>Merhaba ben Eren, güncel teknolojiler ile web geliştiriciliği yapıyorum,<br /> arayüzler tasarlamak ve herkesten farklı işler yapmak benim mottom.</p>
-          <a href="#" className='text-xl font-semibold rounded-2xl py-4 transition-all flex items-center hover:scale-95'>Projelerimi inceleyebilirsiniz <span class="line"></span>&gt;</a>
+          <a href="https://erenyalcn.dev/projelerim" className='text-xl font-semibold rounded-2xl py-4 transition-all flex items-center hover:scale-95'>Projelerimi inceleyebilirsiniz <span class="line"></span>&gt;</a>
           <nav className='flex gap-x-4 mt-5 text-md'>
             <a href="https://www.linkedin.com/in/erenyalcn/" className='hover:line-through hover:scale-105 transition-all'>
             Linkedin
