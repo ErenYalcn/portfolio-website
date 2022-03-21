@@ -1,13 +1,32 @@
-import React from 'react'
+import React, {useRef} from 'react'
 import particles from '../../Image/particles.mp4'
 import {BiWorld} from 'react-icons/bi'
 import{AiFillGithub, AiFillLinkedin, AiOutlineInstagram} from 'react-icons/ai'
+import emailjs from '@emailjs/browser';
+
 export default function Contact() {
+
+   
+    const form = useRef();
+  
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs.sendForm('service_d2pttbr', 'template_pm8qpnk', form.current, 'U61fIfVEfL1-C7URP')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+    };
+
+    
+
   return (
 
 
     <div className='relative w-full h-full'>
-      <video loop autoPlay muted src={particles} className='absolute z-10 w-full h-full object-cover min-w-max' />
+      <video loop autoPlay playsinline muted src={particles} className='pointer-events-none	absolute z-10 w-[100%] h-[100%] sm:w-full sm:h-full object-cover sm:min-w-max' />
 
           <div class="z-30 relative max-w-screen-xl px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto text-gray-900 bg">
             <div class="flex flex-col">
@@ -58,31 +77,32 @@ export default function Contact() {
 
                 </div>
             </div>
-            <div class="">
+            <form ref={form} onSubmit={sendEmail}>
               <div>
                 <span class="uppercase text-sm text-[#ffffff5e] font-bold">İSMİNİZ</span>
                 <input class="w-full bg-inputg text-cwhite mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                  type="text" placeholder="" />
+                  type="text" name="user_name"  placeholder="" />
               </div>
               <div class="mt-8">
                 <span class="uppercase text-sm text-[#ffffff5e] font-bold">E-Posta</span>
                 <input class="w-full bg-inputg text-cwhite mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                  type="text" />
+                  type="email" name="user_email" />
               </div>
               <div class="mt-8">
                 <span class="uppercase text-sm text-[#ffffff5e] font-bold">Mesajınız</span>
                 <textarea
-                  class="w-full h-32 bg-inputg text-cwhite mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
+                  class="w-full h-32 bg-inputg text-cwhite mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" name="message"></textarea>
               </div>
               <div class="mt-8">
                 <button
-                  class="uppercase text-sm font-bold tracking-wide bg-inputgg hover:bg-inputg transition-all text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline">
+                  class="uppercase text-sm font-bold tracking-wide bg-inputgg hover:bg-inputg transition-all text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline" type="submit" value="Send">
                   Gönder
                 </button>
               </div>
-            </div>
+            </form>
           </div>
       </div>
     
   )
 }
+

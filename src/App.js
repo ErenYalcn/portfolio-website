@@ -2,7 +2,7 @@ import Content from "components/Content";
 import Footer from "components/Footer"
 import { Icon } from 'Icons'
 import { BrowserRouter as Router, Switch } from "react-router-dom";
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {Sugar} from 'react-preloaders2';
 import DarkModeToggle from "react-dark-mode-toggle";
 
@@ -25,7 +25,6 @@ function App() {
 
 
   const [isOpen, setOpen] = useState(false)
-        console.log(isDarkMode)    
     
 
     let menu
@@ -105,10 +104,32 @@ function App() {
             if(isOpen){
                 setOpen(false)
                 document.body.classList.remove("stop-scrolling");
-                location.reload();
+                //location.reload();
+                
+                
+            }
+            }
 
+            if(isOpen == true){
+                document.body.classList.add("stop-scrolling");
+
+                
+                window.scrollTo({
+                  top: 0,
+                  behavior: 'smooth' 
+             }); 
+            }else{
+                document.body.classList.remove("stop-scrolling");
             }
-            }
+
+
+
+          
+
+
+
+            
+            
             
             
   return (
@@ -126,34 +147,10 @@ function App() {
         <div className='flex justify-between items-center px-8 sm:px-[75px] bg-transparent'>
         <a href="https://erenyalcn.dev" className='text-black z-50'>{!isDarkMode  ? <Icon name="logo" size={100}  /> : <Icon name="logow" size={100} />}</a>
         <div className='block sm:hidden z-50'>
+        <Hamburger color={!isDarkMode ? "black" : "white"} toggled={isOpen} toggle={setOpen} />
             
             
-        <Hamburger color={!isDarkMode ? "black" : "white"} onToggle={toggled => {
-            if (toggled) {
-                // open a menu 
-                console.log('açıldı')
-                setOpen(true)
-                document.body.classList.add("stop-scrolling");
 
-                
-                window.scrollTo({
-                  top: 0,
-                  behavior: 'smooth' // for smoothly scrolling
-             });
-                
-                    
-            } 
-            
-            else {
-                // close a menu
-                console.log('kapandı')
-                setOpen(false)
-                document.body.classList.remove("stop-scrolling");
-                
-
-                
-            }
-            }} />
 
                 
             </div>
@@ -189,7 +186,7 @@ function App() {
       </Switch>
         <Content />
         <Footer />
-        <div className="relative">
+        <div className="relative pointer-events-none">
         <Icon name="dot" size={180}/>
         <Icon name="circletwo" size={300}/>
         </div>
@@ -198,6 +195,7 @@ function App() {
           onChange={setIsDarkMode}
           checked={isDarkMode}
           size={60}
+          
         />
         
 
