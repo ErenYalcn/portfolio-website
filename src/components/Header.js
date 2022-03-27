@@ -7,16 +7,15 @@ import{AiFillGithub, AiFillLinkedin, AiOutlineInstagram} from 'react-icons/ai'
 
 export default function Header({isDarkMode}) {
     const [isOpen, setOpen] = useState(false)
-        console.log(isDarkMode)    
     
 
     let menu
     if(isOpen){
         
         menu =     
-        <div className='bg-cwhite w-full h-full fixed z-50 overflow-y-hidden'>
+        <div className={!isDarkMode ?'bg-cwhite min-w-full min-h-full fixed z-50 overflow-y-hidden': 'bg-black text-white min-w-full min-h-full fixed z-50 overflow-y-hidden'}>
             <nav className='mt-[10rem]'>
-                <ul className='flex flex-col gap-x-4 font-bold text-black text-4xl gap-y-7 items-center'>
+                <ul className='flex flex-col gap-x-4 font-bold  text-[2.3rem] gap-y-7 items-center'>
                     <li className='hover:text-black transition-all '>
                         <NavLink to={"/"} exact activeClassName="line-through transition-all" >
                         Anasayfa
@@ -87,10 +86,22 @@ export default function Header({isDarkMode}) {
             if(isOpen){
                 setOpen(false)
                 document.body.classList.remove("stop-scrolling");
-                location.reload();
+                //location.reload();
                 
                 
             }
+            }
+
+            if(isOpen == true){
+                document.body.classList.add("stop-scrolling");
+
+                
+                window.scrollTo({
+                  top: 0,
+                  behavior: 'smooth' 
+             }); 
+            }else{
+                document.body.classList.remove("stop-scrolling");
             }
 
 
@@ -109,27 +120,7 @@ export default function Header({isDarkMode}) {
         <div className='block sm:hidden z-50'>
             
             
-        <Hamburger color={!isDarkMode ? "black" : "white"} onToggle={toggled => {
-            if (toggled) {
-                // open a menu 
-                console.log('açıldı')
-                setOpen(true)
-                document.body.classList.add("stop-scrolling");
-
-                
-                
-                
-                    
-            } 
-            
-            else {
-                // close a menu
-                console.log('kapandı')
-                setOpen(false)
-                document.body.classList.remove("stop-scrolling");
-                
-            }
-            }} />
+        <Hamburger color={!isDarkMode ? "black" : "white"} toggled={isOpen} toggle={setOpen}  />
 
                 
             </div>

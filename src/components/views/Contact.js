@@ -26,7 +26,7 @@ export default function Contact() {
 
 
     <div className='relative w-full h-full'>
-      <video loop autoPlay playsinline muted src={particles} className='pointer-events-none	absolute z-10 w-[100%] h-[100%] sm:w-full sm:h-full object-cover sm:min-w-max' />
+      <video loop autoPlay muted src={particles} className='pointer-events-none	absolute z-10 w-[100%] h-[100%] sm:w-full sm:h-full object-cover sm:min-w-max' />
 
           <div class="z-30 relative max-w-screen-xl px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto text-gray-900 bg">
             <div class="flex flex-col">
