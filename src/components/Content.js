@@ -8,13 +8,13 @@ import Contact from './views/Contact'
 import Hakkimda from './views/Hakkimda'
 import MyProjects from './views/MyProjects'
 
-export default function Content() {
+export default function Content({isDarkMode}) {
   return (
     <div>
       <Switch>
         
         <Route exact path={"/"}>
-        <HeroSection />
+        <HeroSection  isDarkMode={isDarkMode}/>
         <About />
         <Projects />
         </Route>

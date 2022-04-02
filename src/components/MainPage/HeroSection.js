@@ -4,13 +4,13 @@ import cesar from '../../Image/cesar.png'
 import Typical from 'react-typical'
 
 
-export default function HeroSection() {
+export default function HeroSection({isDarkMode}) {
   return (
     <div className=' top-0'>
       <div className='grid sm:flex justify-between p-2  px-8 sm:px-32 2xl:px-64  items-center'>
         <div className='z-20 order-2 md:order-1'>
           <h2 className='text-xl sm:text-5xl font-bold'><span className='text-6xl'>Eren Yalçın</span> <br /> 
-            <div className='min-h-[40px]'>
+            <div className='min-h-[40px] text-sm sm:text-xl'>
             <Typical
             steps={['Front-End Developer', 1000, 'UI | UX Designer', 500,'Creative Ideas', 500]}
             loop={Infinity}
@@ -34,7 +34,7 @@ export default function HeroSection() {
             </a>
           </nav>
         </div>
-        <div className='hidden sm:block w-[450px] h-[450px] rounded-full absolute bg-white left-0 right-0 m-auto my-auto bg-opacity-60'></div>
+        <div className={isDarkMode ? ('w-[250px] h-[250px] sm:w-[450px] sm:h-[450px] top-28 sm:top-none  rounded-full absolute bg-gray-300  left-0 right-0 m-auto sm:my-auto bg-opacity-20'): (' w-[250px] h-[250px] sm:w-[450px] sm:h-[450px] top-28 sm:top-none rounded-full absolute bg-white left-0 right-0 m-auto sm:my-auto bg-opacity-60')}></div>
        
 
         <div className='relative order-1 md:order-2'>

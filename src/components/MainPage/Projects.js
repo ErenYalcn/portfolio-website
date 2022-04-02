@@ -4,6 +4,8 @@ import ProjectItem2 from './ProjectItem2'
 import ProjectItem3 from './ProjectItem3'
 import Projectitem4 from './Projectitem4'
 import Projectitem5 from './ProjectItem5'
+import Projectitem6 from './ProjectItem6'
+import Projectitem7 from './ProjectItem7'
 
 export default function Projects() {
   return (
@@ -14,6 +16,8 @@ export default function Projects() {
         <ProjectItem3 />
         <Projectitem4 />
         <Projectitem5 />
+        <Projectitem6 />
+        <Projectitem7 />
         <div className='p-16 group ml-12'>
           <p className='text-sm tracking-widest text-nonact'>FAZLASI VAR</p>
           <a href="https://erenyalcn.dev/projelerim">

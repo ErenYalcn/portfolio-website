@@ -5,7 +5,7 @@ export default function About() {
   return (
     <div className='mt-16'>
       <div>
-        <div className='flex-col sm:flex-row flex justify-around p-2 px-8 sm:px-32 2xl:px-64 items-center'>
+        <div className='flex-col md:flex-row flex justify-around p-2 px-8 sm:px-32 2xl:px-64 items-center'>
           <div className=' max-w-md'>
             <img className='sm:w-96 sm:h-96 w-80 h-80' src={transparent} />
           </div>

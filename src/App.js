@@ -4,17 +4,19 @@ import { Icon } from 'Icons'
 import { BrowserRouter as Router, Switch } from "react-router-dom";
 import React, {useState} from 'react';
 import {Sugar} from 'react-preloaders2';
-import DarkModeToggle from "react-dark-mode-toggle";
 import Header from "components/Header";
 
+import { DarkModeSwitch } from 'react-toggle-dark-mode';
 
 
 
 
 function App() {
-  const [isDarkMode, setIsDarkMode] = useState(() => false);
+  const [isDarkMode, setDarkMode] = useState(() => false);
     
-       
+  const toggleDarkMode = (checked) => {
+    setDarkMode(checked);
+  };
             
   return (
     
@@ -30,18 +32,19 @@ function App() {
         
     </div>
       </Switch>
-        <Content />
+        <Content  isDarkMode={isDarkMode}/>
         <Footer />
         <div className="relative pointer-events-none">
         <Icon name="dot" size={180}/>
         <Icon name="circletwo" size={300}/>
         </div>
-        <div className="z-[999]  fixed bottom-4 right-4 rotate-90">
-        <DarkModeToggle
-          onChange={setIsDarkMode}
-          checked={isDarkMode}
-          size={60}
-          
+        <div className="z-[999]  fixed bottom-4 right-8">
+
+        <DarkModeSwitch
+        style={{ marginBottom: '2rem'}}
+        checked={isDarkMode}
+        onChange={toggleDarkMode}
+        size={40}
         />
         
 
