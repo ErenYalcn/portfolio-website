@@ -1,11 +1,15 @@
 import React from 'react'
 import transparent from '../../Image/transparent.png'
 
+import { Fade } from "react-awesome-reveal";
+
 
 export default function Hakkimda() {
   return (
     <div className='sm:mt-16 mb-8'>
     <div>
+    <Fade triggerOnce direction="up" delay={700} >
+
       <div className='sm:flex justify-around p-2 px-8 sm:px-32 2xl:px-64 items-center'>
       <div className='left-0 relative'>
           <h3 className='text-6xl sm:text-8xl font-bold absolute opacity-20'>Hakkımda</h3>
@@ -17,10 +21,13 @@ export default function Hakkimda() {
         </div>
 
       </div>
+      </Fade>
+      <Fade triggerOnce direction="up" delay={1000} >
+
       <div className='max-w-[1050px] flex items-center mx-auto'>
         <p className='tracking-wide	font-thin leading-8 px-8'>Web alanında Front-End geliştiriciliği yapmaktayım. HTML, CSS, JS ve React üzerine çalışmalar yapıp yenilikleri yakalamaya, kendimi yeniliklere adapte etmeye ve gelişime ayak uydurmaya çalışıyorum. Bir yandan e-ticaret siteleri hazırlayıp müşterilerime satışlarını yapmaktayım. Front-End için kullanacağım görsel ve videoları oluşturmak için ileri düzeyde Adobe Photoshop, Illustrator biliyorum. Öte yandan After Effect ve Premiere yazılımlarında da kendimi sürekli geliştirmeye çalışıyorum. Özgün olmak, herkesten farklı işler yapmak, kısacası tarz sahibi işler yapmaya çalışıyorum. Sektör olarakta ilgimi en çok çeken E-Ticaret olmuştur. Her şey bir kahve ile başlar</p>
       </div>
-
+      </Fade>
       
 
     </div>

@@ -8,29 +8,49 @@ import Contact from './views/Contact'
 import Hakkimda from './views/Hakkimda'
 import MyProjects from './views/MyProjects'
 
+import { Fade } from "react-awesome-reveal";
+
+
 export default function Content({isDarkMode}) {
+
   return (
-    <div>
+    <div className='overflow-x-hidden'>
       <Switch>
         
-        <Route exact path={"/"}>
+       <Route exact path={"/"}>
+       <Fade triggerOnce direction="up" delay={1000} >
         <HeroSection  isDarkMode={isDarkMode}/>
-        <About />
+        </Fade>
+        <Fade triggerOnce delay={2000} direction="up" damping={1}>
+        <About isDarkMode={isDarkMode}/>
+        </Fade>
+        <Fade triggerOnce delay={500} direction="up" damping={1}>
+
         <Projects />
+        </Fade>
         </Route>
 
         <Route path={"/hakkimda"}>
+        <Fade triggerOnce delay={500} direction="up" damping={1}>
+
           <Hakkimda />
+          </Fade>
         </Route>
 
         <Route path={"/projelerim"}>
+        <Fade triggerOnce delay={500} direction="up" damping={1}>
+
           <MyProjects />
+          </Fade>
         </Route>
 
         <Route path={"/iletisim"}>
-          <Contact />
+        <Fade triggerOnce delay={500} direction="up" damping={1}>
 
+          <Contact />
+          </Fade>
         </Route>
+      
       </Switch>
 
     </div>

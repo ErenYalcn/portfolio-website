@@ -12,6 +12,10 @@ import { DarkModeSwitch } from 'react-toggle-dark-mode';
 
 
 function App() {
+ 
+
+
+
   const [isDarkMode, setDarkMode] = useState(() => false);
     
   const toggleDarkMode = (checked) => {
@@ -20,17 +24,21 @@ function App() {
             
   return (
     
-    <div className={!isDarkMode ? 'App bg-cwhite' : 'App bg-[#0f0f0f] !text-white'}>
+    <div className={!isDarkMode ? 'App bg-cwhite' : 'App bg-[#040404] !text-white'}>
+
 
     <Router>
       <Switch>
       <div className='text-black sticky top-0 z-50'>
   
 
-        <Header  isDarkMode={isDarkMode}/>
+        <Header isDarkMode={isDarkMode}/>
 
         
     </div>
+
+
+   
       </Switch>
         <Content  isDarkMode={isDarkMode}/>
         <Footer />
@@ -41,10 +49,10 @@ function App() {
         <div className="z-[999]  fixed bottom-4 right-8">
 
         <DarkModeSwitch
-        style={{ marginBottom: '2rem'}}
+        style={{ marginBottom: '0.9rem'}}
         checked={isDarkMode}
         onChange={toggleDarkMode}
-        size={40}
+        size={35}
         />
         
 

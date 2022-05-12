@@ -5,8 +5,15 @@ import Typical from 'react-typical'
 
 
 export default function HeroSection({isDarkMode}) {
+
+  
+
+
+
   return (
     <div className=' top-0'>
+
+
       <div className='grid sm:flex justify-between p-2  px-8 sm:px-32 2xl:px-64  items-center'>
         <div className='z-20 order-2 md:order-1'>
           <h2 className='text-xl sm:text-5xl font-bold'><span className='text-6xl'>Eren Yalçın</span> <br /> 

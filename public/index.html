@@ -45,14 +45,25 @@
 <link href="/pwa/img/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
 <link href="/pwa/img/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
 <link href="/pwa/img/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-<link rel="apple-touch-icon" sizes="128x128" href="/pwa/img/128x128.png">
-<link rel="apple-touch-icon-precomposed" sizes="128x128" href="/pwa/img/128x128.png">
+<link rel="apple-touch-icon" sizes="128x128" href="/pwa/img/192x192.png">
+<link rel="apple-touch-icon-precomposed" sizes="128x128" href="/pwa/img/192x192.png">
 <link rel="icon" sizes="192x192" href="/pwa/img/192x192.png">
 <link rel="icon" sizes="128x128" href="/pwa/img/128x128.png">
+
+
+
+<link rel="apple-touch-startup-image" href="/pwa/img/192x192.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="/pwa/img/192x192.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="/pwa/img/192x192.png" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="/pwa/img/192x192.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="/pwa/img/192x192.png" media="(min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="/pwa/img/192x192.png" media="(min-device-width: 834px) and (max-device-width: 834px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="/pwa/img/192x192.png" media="(min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
 <script> 
   if ('serviceWorker' in navigator) { 
 
       window.addEventListener('load', function() { 
+        navigator.serviceWorker.register();
          navigator.serviceWorker.register('service-worker.js').then(function(registration) { 
          console.log('ServiceWorker registration successful with scope: ', registration.scope); 
       }, function(err) {  
@@ -70,23 +81,7 @@
   </head>
   <body>
     
-    <script> 
-      if ('serviceWorker' in navigator) { 
-
-          window.addEventListener('load', function() { 
-             navigator.serviceWorker.register('service-worker.js').then(function(registration) { 
-             console.log('ServiceWorker registration successful with scope: ', registration.scope); 
-          }, function(err) {  
-             console.log('ServiceWorker registration failed: ', err); 
-          }).catch(function(err) { 
-            console.log(err) 
-          }); 
-
-      }); 
-      } else { 
-          console.log('service worker is not supported'); 
-      } 
- </script> 
+   
  
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>

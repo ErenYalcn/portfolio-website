@@ -83,6 +83,10 @@ export default function Header({isDarkMode}) {
             
             
             function onUrlChange() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth' 
+                });
             if(isOpen){
                 setOpen(false)
                 document.body.classList.remove("stop-scrolling");

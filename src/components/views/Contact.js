@@ -3,6 +3,7 @@ import particles from '../../Image/particles.mp4'
 import {BiWorld} from 'react-icons/bi'
 import{AiFillGithub, AiFillLinkedin, AiOutlineInstagram} from 'react-icons/ai'
 import emailjs from '@emailjs/browser';
+import { Fade } from "react-awesome-reveal";
 
 export default function Contact() {
 
@@ -26,10 +27,12 @@ export default function Contact() {
 
 
     <div className='relative w-full h-full'>
-      <video loop autoPlay muted src={particles} className='pointer-events-none	absolute z-10 w-[100%] h-[100%] sm:w-full sm:h-full object-cover sm:min-w-max' />
+      <video loop autoPlay webkit-playsinline playsinline muted src={particles} className='pointer-events-none	absolute z-10 w-[100%] h-[100%] sm:w-full sm:h-full object-cover sm:min-w-max' />
 
           <div class="z-30 relative max-w-screen-xl px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto text-gray-900 bg">
             <div class="flex flex-col">
+            <Fade triggerOnce direction="up" delay={1000} >
+
               <div className='mt-16'>
                 <h2 class="text-4xl lg:text-5xl font-bold leading-tight text-cwhite stroke-2 stroke-white">İrtibata geçelim!</h2>
                 <div class="text-cwhite mt-8">
@@ -37,9 +40,13 @@ export default function Contact() {
                   <h2 class="text-2xl mt-2 font-bold leading-tight text-cwhite stroke-2 stroke-white">Farklı, yaratıcı işler ortaya çıkarmak istiyorsanız.</h2>
                 </div>         
               </div>
+              </Fade>
+              
               <div class="mt-20 -ml-16">
                 <div className=' sm:flex items-center justify-between px-16'>
                     <div className='text-cwhite flex flex-col'>
+                    <Fade triggerOnce direction="up" delay={1700} >
+
                       <h5>Sosyal Medya.</h5>
                       <div className='flex items-center gap-x-3 mt-4'>
                 <div className='text-xl hover:bg-cwhite text-cwhite hover:text-black max-w-max p-[6px] rounded-full transition-all'>
@@ -68,10 +75,14 @@ export default function Contact() {
                 
                 
             </div>
+                    </Fade>
                     </div>
                     <div className='text-cwhite flex flex-col'>
+                    <Fade triggerOnce direction="up" delay={2000} >
+
                     <h5>Telefon.</h5>
                     <a href="tel://+905419691945" className='mt-4 text-cwhite'>+90 541 969 1945</a>
+                    </Fade>
                   </div>
                   </div>
 
