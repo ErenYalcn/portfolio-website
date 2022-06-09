@@ -4,6 +4,8 @@ import {BiWorld} from 'react-icons/bi'
 import{AiFillGithub, AiFillLinkedin, AiOutlineInstagram} from 'react-icons/ai'
 import emailjs from '@emailjs/browser';
 import { Fade } from "react-awesome-reveal";
+import {Helmet} from "react-helmet";
+
 
 export default function Contact() {
 
@@ -27,7 +29,11 @@ export default function Contact() {
 
 
     <div className='relative w-full h-full'>
-      <video loop autoPlay webkit-playsinline playsinline muted src={particles} className='pointer-events-none	absolute z-10 w-[100%] h-[100%] sm:w-full sm:h-full object-cover sm:min-w-max' />
+                  <Helmet>
+                <meta charSet="utf-8" />
+                <title>İletişim | Eren Yalçın</title>
+            </Helmet>
+      <video loop autoPlay webkit-playsinline webkit-playsInline playsInline muted src={particles} className='pointer-events-none	absolute z-10 w-[100%] h-[100%] sm:w-full sm:h-full object-cover sm:min-w-max' />
 
           <div class="z-30 relative max-w-screen-xl px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto text-gray-900 bg">
             <div class="flex flex-col">

@@ -3,7 +3,7 @@ import Footer from "components/Footer"
 import { Icon } from 'Icons'
 import { BrowserRouter as Router, Switch } from "react-router-dom";
 import React, {useState} from 'react';
-import {Sugar} from 'react-preloaders2';
+import {Lines} from 'react-preloaders2';
 import Header from "components/Header";
 
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
@@ -58,7 +58,7 @@ function App() {
 
         </div>
     </Router>
-    <Sugar color="white" background="black" animation="slide-left" />
+    <Lines color="white" background="black" animation="slide-left" />
   </div>
   
 

@@ -2,6 +2,7 @@ import { Icon } from 'Icons'
 import React from 'react'
 import cesar from '../../Image/cesar.png'
 import Typical from 'react-typical'
+import {Helmet} from "react-helmet";
 
 
 export default function HeroSection({isDarkMode}) {
@@ -12,11 +13,15 @@ export default function HeroSection({isDarkMode}) {
 
   return (
     <div className=' top-0'>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Anasayfa | Eren Yalçın</title>
+            </Helmet>
 
 
       <div className='grid sm:flex justify-between p-2  px-8 sm:px-32 2xl:px-64  items-center'>
         <div className='z-20 order-2 md:order-1'>
-          <h2 className='text-xl sm:text-5xl font-bold'><span className='text-6xl'>Eren Yalçın</span> <br /> 
+          <h1 className='text-xl sm:text-5xl font-bold'><span className='text-6xl'>Eren Yalçın</span> <br /> 
             <div className='min-h-[40px] text-sm sm:text-xl'>
             <Typical
             steps={['Front-End Developer', 1000, 'UI | UX Designer', 500,'Creative Ideas', 500]}
@@ -24,7 +29,7 @@ export default function HeroSection({isDarkMode}) {
             wrapper="p"
           />
             </div>
-          </h2>
+          </h1>
           <p className='text-sm mt-6'>Merhaba ben Eren, güncel teknolojiler ile web geliştiriciliği yapıyorum,<br /> arayüzler tasarlamak ve herkesten farklı işler yapmak benim mottom.</p>
           <a href="https://erenyalcn.dev/projelerim" className='text-xl font-semibold rounded-2xl py-4 transition-all flex items-center hover:scale-95'>Projelerimi inceleyebilirsiniz <span class="line"></span>&gt;</a>
           <nav className='flex gap-x-4 mt-5 text-md'>

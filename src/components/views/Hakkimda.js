@@ -2,6 +2,7 @@ import React from 'react'
 import transparent from '../../Image/transparent.png'
 
 import { Fade } from "react-awesome-reveal";
+import Skills from 'components/MainPage/skills';
 
 
 export default function Hakkimda() {
@@ -28,7 +29,10 @@ export default function Hakkimda() {
         <p className='tracking-wide	font-thin leading-8 px-8'>Web alanında Front-End geliştiriciliği yapmaktayım. HTML, CSS, JS ve React üzerine çalışmalar yapıp yenilikleri yakalamaya, kendimi yeniliklere adapte etmeye ve gelişime ayak uydurmaya çalışıyorum. Bir yandan e-ticaret siteleri hazırlayıp müşterilerime satışlarını yapmaktayım. Front-End için kullanacağım görsel ve videoları oluşturmak için ileri düzeyde Adobe Photoshop, Illustrator biliyorum. Öte yandan After Effect ve Premiere yazılımlarında da kendimi sürekli geliştirmeye çalışıyorum. Özgün olmak, herkesten farklı işler yapmak, kısacası tarz sahibi işler yapmaya çalışıyorum. Sektör olarakta ilgimi en çok çeken E-Ticaret olmuştur. Her şey bir kahve ile başlar</p>
       </div>
       </Fade>
-      
+      <Fade triggerOnce direction="up" delay={700} >
+    <Skills />
+      </Fade>
+
 
     </div>
   </div>

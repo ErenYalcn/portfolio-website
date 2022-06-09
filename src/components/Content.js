@@ -9,6 +9,7 @@ import Hakkimda from './views/Hakkimda'
 import MyProjects from './views/MyProjects'
 
 import { Fade } from "react-awesome-reveal";
+import Skills from './MainPage/skills'
 
 
 export default function Content({isDarkMode}) {
@@ -21,9 +22,11 @@ export default function Content({isDarkMode}) {
        <Fade triggerOnce direction="up" delay={1000} >
         <HeroSection  isDarkMode={isDarkMode}/>
         </Fade>
-        <Fade triggerOnce delay={2000} direction="up" damping={1}>
+        <Fade triggerOnce delay={1000} direction="up" damping={1}>
         <About isDarkMode={isDarkMode}/>
         </Fade>
+        
+ 
         <Fade triggerOnce delay={500} direction="up" damping={1}>
 
         <Projects />
